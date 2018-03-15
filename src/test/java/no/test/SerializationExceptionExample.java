@@ -98,12 +98,12 @@ public class SerializationExceptionExample {
                     songs.add((Song)record.value());
                 }
             } catch (SerializationException ex) {
-                logger.error(ex.getMessage(), ex);
+                logger.error(ex);
             }
             try {
                 Thread.sleep(100);
             } catch (InterruptedException ex) {
-                logger.error(ex.getMessage(), ex);
+                logger.error(ex);
             }
         }
 
